@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Formulaire d'inscription</h2>
+    <form method="post" action="reponse.php">
+        <label>Prénom :</label>
+        <input type="text" name="prenom" required> 
+        <label>Nom :</label>
+        <input type="text" name="nom" required><br><br>
+
+        <label>Date de naissance :</label>
+        <input type="date" name="date_naissance" required><br><br>
+
+        <label>ID :</label>
+        <input type="number" name="identifiant" required><br><br>
+
+        <label>Mot de passe :</label> 
+        <input type="password" name="motdepasse" required><br><br>
+
+        <label>Sexe :</label> 
+        <input type="radio" name="sexe" value="Homme" required> Homme
+        <input type="radio" name="sexe" value="Femme"> Femme<br><br>
+ 
+        <label>
+            <input type="checkbox" name="debut_php">
+            Je débute en PHP
+        </label><br><br>
+
+        <button type="submit" name="envoyer">Envoyer</button>
+    </form>
+</body>
+</html>
